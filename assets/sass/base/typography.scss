@@ -1,0 +1,31 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+.pri-heading{
+    font-size:2.188rem ; //35px
+    text-transform: uppercase;
+   // margin-bottom: 5rem; // 80px
+    letter-spacing: 0.125rem; // 2px
+   // background-image: linear-gradient(to right,$color-primary-light,$color-primary-dark);
+   @include lg(to right,$color-primary-light,$color-primary-dark);
+    @include backgroundclip;
+    display: inline-block;
+    transition: all .4s ease-in-out;
+
+    &:hover, &:focus, &:active{
+        transform: scale(1.1);
+        text-shadow: 0.313rem 0.625rem 1.25rem rgba($color-dark, .2); // 5px 10px 20px
+    }
+
+}
+
+.sec-heading{
+    text-transform: uppercase;
+    font-size: 1rem; //16px
+    margin-bottom: 1.25rem;//20px
+}
+
+.para{
+    font-size: 1rem; //16px
+    margin-bottom: 1.875rem;//30px
+}
